@@ -1,51 +1,81 @@
 # 🤖 AI Resume Analyzer
-An AI-powered resume analysis tool that helps job seekers understand how well their resume matches a target job description.
-The application analyzes resume content, identifies relevant skills and keywords, calculates a job-match score, and provides actionable suggestions for improvement.
 
-## What problem does it solve?
-Many resumes contain good experience but fail to clearly match the requirements of a job.
+An AI-powered resume analysis tool that helps job seekers understand how well their resume matches a target job description.
+
+The application analyzes resume content, identifies relevant skills and keywords, calculates a job-match score, and provides suggestions for improving the resume.
+
+## 🎯 What Problem Does It Solve?
+
+Many resumes contain good experience but do not clearly match the requirements of a particular job.
 
 This project helps users:
+
 - Analyze their resume
-- Compare it with a job description
-- Identify missing keywords and skills
-- Understand their resume match score
-- Improve weak sections
-- Make their resume more relevant to a target role
+- Compare their resume with a job description
+- Identify relevant keywords
+- Find missing keywords
+- Calculate a resume match score
+- Get suggestions for improvement
 
-## 🚀 Features
-### 📄 Resume Parsing
-Extracts important information from uploaded resumes.
+## ✨ Features
 
-### 🎯 Job Description Matching
-Compares resume content with a target job description.
+- 📄 Resume text extraction from PDF files
+- 🎯 Job description matching
+- 🔎 Keyword analysis
+- 📊 Resume match score
+- 💡 Resume improvement suggestions
+- 🖥️ Simple and interactive web interface
+- ⚡ Fast analysis using Python
 
-### 🔎 Keyword Analysis
-Identifies relevant and missing keywords.
+## 🔄 How It Works
 
-### 📊 Match Score
-Provides a percentage-based indication of how closely the resume matches the target role.
-
-### 💡 Resume Recommendations
-Provides actionable suggestions for improving the resume.
-
-### 🖥️ Interactive Interface
-Simple web interface for uploading resumes and viewing analysis results.
+1. Upload your resume in PDF format.
+2. The application extracts the resume text.
+3. Enter the target job description.
+4. The application analyzes the resume and job description.
+5. Resume content is compared with the job requirements.
+6. A match score is calculated.
+7. Relevant and missing keywords are identified.
+8. Suggestions are displayed to help improve the resume.
 
 ## 🛠️ Tech Stack
+
 - Python
 - Streamlit
-- NLP
-- PDF/Word document processing
-- HTML/CSS
+- PyPDF2
+- Scikit-learn
 
+## 📸 Screenshots
 
-## 🧠 How It Works
-1. User uploads their resume.
-2. The application extracts the resume content.
-3. The resume is analyzed using NLP techniques.
-4. The user provides a target job description.
-5. Resume content is compared with the job requirements.
-6. The application calculates a match score.
-7. Missing keywords and skills are identified.
-8. The application provides improvement suggestions.
+### Dashboard
+
+![Dashboard](dashboard.png)
+
+### Analysis Results
+
+![Analysis Results](analysis-results.png)
+
+## 🚀 Installation
+pip install -r requirements.txt
+
+### 1. Clone the repository
+
+```bash
+MAC/Linux
+python3 -m venv .venv
+source .venv/bin/activate
+
+Windows
+python -m venv .venv
+.venv\Scripts\activate
+
+Run the application
+streamlit run app.py
+
+Run the application
+streamlit run app.py
+
+Open the application
+Open the local URL shown in your terminal.
+Usually:
+http://localhost:8501
