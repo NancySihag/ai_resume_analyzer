@@ -3,8 +3,11 @@ import PyPDF2
 from analyzer import ResumeAnalyzer
 
 # Application Layout Directives
-st.set_page_config(page_title="Enterprise Resume Profiler", page_icon="🎯", layout="wide")
-
+st.set_page_config(
+    page_title="AI Resume Analyzer",
+    page_icon="🎯",
+    layout="wide"
+)
 def parse_pdf_stream(file_stream) -> str:
     """Extracts raw string contents safely from an uploaded PDF stream object."""
     try:
@@ -22,8 +25,8 @@ ROLE_TEMPLATES = {
 }
 
 # --- RENDER WEB PORTAL UI ---
-st.title("AI Resume Diagnostic Engine 🎯")
-st.caption("Clean, production-grade screening pipeline for student portfolio evaluation tracks.")
+st.title("AI Resume Analyzer 🎯")
+st.caption("Analyze your resume, compare it with a job description, and discover keywords you may be missing.")
 st.markdown("---")
 
 with st.sidebar:
@@ -39,7 +42,7 @@ with st.sidebar:
     )
 
 # Primary Interaction Execution Block
-if st.button("Run Deep Profile Diagnostics", type="primary"):
+if st.button("Analyze My Resume", type="primary"):
     if not uploaded_file or not jd_input.strip():
         st.warning("Please verify that a PDF asset has been uploaded and a valid profile description is supplied.")
     else:
@@ -57,7 +60,7 @@ if st.button("Run Deep Profile Diagnostics", type="primary"):
                 density_msg, density_color = engine.get_readability_metrics()
                 blueprints = engine.generate_project_roadmaps(missing_hard)
                 
-                st.success("Telemetry Diagnostics Complete!")
+               st.success("Resume analysis completed successfully!")
                 
                 # --- LAYOUT ROW 1: CORE TELEMETRY METRICS ---
                 m_col1, m_col2, m_col3 = st.columns(3)
