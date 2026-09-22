@@ -51,16 +51,16 @@ if st.button("Analyze My Resume", type="primary"):
             extracted_text = parse_pdf_stream(uploaded_file)
             
             if extracted_text.strip():
-                # 2. Compute Analytics via Backend Class
-                engine = ResumeAnalyzer(extracted_text, jd_input)
-                match_score = engine.calculate_match_score()
-                missing_hard, missing_soft = engine.extract_keyword_gaps()
-                compliance_checks = engine.check_structural_compliance()
-                tone_status, verb_count = engine.evaluate_phrasing_tone()
-                density_msg, density_color = engine.get_readability_metrics()
-                blueprints = engine.generate_project_roadmaps(missing_hard)
-                
-               st.success("Resume analysis completed successfully!")
+    # 2. Compute Analytics via Backend Class
+        engine = ResumeAnalyzer(extracted_text, jd_input)
+        match_score = engine.calculate_match_score()
+        missing_hard, missing_soft = engine.extract_keyword_gaps()
+        compliance_checks = engine.check_structural_compliance()
+        tone_status, verb_count = engine.evaluate_phrasing_tone()
+        density_msg, density_color = engine.get_readability_metrics()
+        blueprints = engine.generate_project_roadmaps(missing_hard)
+
+        st.success("Resume analysis completed successfully!")
                 
                 # --- LAYOUT ROW 1: CORE TELEMETRY METRICS ---
                 m_col1, m_col2, m_col3 = st.columns(3)
