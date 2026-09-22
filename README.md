@@ -1,40 +1,37 @@
 # 🤖 AI Resume Analyzer
-
-An AI-powered resume analysis application that helps users understand
-their resume, identify important skills and keywords, and receive
-ATS-style feedback.
+An AI-powered resume analysis application that helps users evaluate their resumes, identify important skills, compare their profile with job requirements, and receive actionable feedback.
 
 ## 🚀 Features
 
-- 📄 Resume upload
-- 🔍 Resume text extraction
-- 🛠️ Skill and keyword identification
-- 📊 ATS-style resume analysis
-- 🎯 Job description matching
-- 💡 Resume improvement suggestions
-- 📋 Structured analysis results
+- 📄 Upload and analyze resumes
+- 🔍 Extract important information from resumes
+- 🛠️ Identify relevant skills and keywords
+- 📊 Generate an ATS-style resume analysis
+- 🎯 Compare resume content with job requirements
+- 💡 Provide suggestions for improving the resume
+- 📋 Present analysis results in an easy-to-understand format
 
 ## 🛠️ Tech Stack
 
 - Python
-- Streamlit / Flask
-- AI APIs
-- PDF/DOCX processing
-- Pandas
-- HTML/CSS
+- [Add your actual framework here]
+- [Add your actual AI/API technology here]
+- [Add your actual database here, if applicable]
+- HTML / CSS / JavaScript
+- Git & GitHub
 
 ## 🧠 How It Works
 
 ```text
 Resume Upload
       ↓
-Text Extraction
+Resume Text Extraction
       ↓
-Resume Processing
+Content Processing
       ↓
 Skill & Keyword Analysis
       ↓
-Job Description Matching
+Job Requirement Matching
       ↓
 ATS-Style Analysis
       ↓
