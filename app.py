@@ -240,4 +240,73 @@ if st.button("Analyze My Resume", type="primary"):
                 g_col1, g_col2 = st.columns(2)
 
                 # Technical skills
-                with
+                with g_col1:
+                    st.subheader("💡 Missing Technical Skills")
+
+                    if missing_hard:
+                        st.caption(
+                            ", ".join(
+                                [f"`{s}`" for s in missing_hard]
+                            )
+                        )
+                    else:
+                        st.write(
+                            "✅ No major technical skill gaps found."
+                        )
+
+                # Professional skills
+                with g_col2:
+                    st.subheader("🤝 Missing Professional Skills")
+
+                    if missing_soft:
+                        st.caption(
+                            ", ".join(
+                                [f"`{s}`" for s in missing_soft]
+                            )
+                        )
+                    else:
+                        st.write(
+                            "✅ No major professional skill gaps found."
+                        )
+
+                st.markdown("---")
+
+                # -----------------------------
+                # PROJECT ROADMAP
+                # -----------------------------
+                st.subheader(
+                    "🛠️ Suggested Project Roadmap"
+                )
+
+                st.write(
+                    "These project ideas can help you build "
+                    "experience around skills missing from "
+                    "your target job description."
+                )
+
+                if blueprints:
+
+                    for tech, descriptive_roadmap in blueprints:
+
+                        with st.expander(
+                            f"Project idea for: **{tech}**"
+                        ):
+
+                            st.write(
+                                f"**Action Plan:** "
+                                f"{descriptive_roadmap}"
+                            )
+
+                else:
+
+                    st.info(
+                        "✅ No major skill gaps found "
+                        "for this job description."
+                    )
+
+            else:
+
+                st.error(
+                    "Could not extract text from this PDF. "
+                    "Please try another PDF resume."
+                )
