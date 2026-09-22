@@ -1,5 +1,3 @@
-requirements.txt
-
 streamlit
 PyPDF2
 scikit-learn
