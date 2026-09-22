@@ -1,8 +1,9 @@
 # 🤖 AI Resume Analyzer
+🚀 **[Live Demo](https://nancy-ai-resume-analyzer.streamlit.app)**
+
+Try the live AI Resume Analyzer without installing anything locally.
 
 An AI-powered resume analysis tool that helps job seekers understand how well their resume matches a target job description.
-
-The application analyzes resume content, identifies relevant skills and keywords, calculates a job-match score, and provides suggestions for improving the resume.
 
 ## 🎯 What Problem Does It Solve?
 
