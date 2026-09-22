@@ -14,9 +14,11 @@ An AI-powered resume analysis application that helps users evaluate their resume
 ## 🛠️ Tech Stack
 
 - Python
-- [Add your actual framework here]
-- [Add your actual AI/API technology here]
-- [Add your actual database here, if applicable]
+-Backend: Python
+UI: Streamlit
+Document Processing: PyPDF2, python-docx
+NLP: spaCy
+AI: Google Gemini API
 - HTML / CSS / JavaScript
 - Git & GitHub
 
