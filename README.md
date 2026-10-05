@@ -149,4 +149,3 @@ Built as a portfolio project to demonstrate Python, Streamlit, document processi
 📄 License
 This project is intended for educational and portfolio purposes.
 
-**One important thing:** this assumes your repository actually has `dashboard.png`, `analysis-results.png`,`requirements.txt`, and `app.py` with those exact names. If those files are different, tell me **“check my files”** and I’ll help you make the README match your actual GitHub repository exactly.
