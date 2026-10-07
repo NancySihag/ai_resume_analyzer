@@ -34,7 +34,7 @@ The application currently includes templates for:
 
 ## 📂 Project Structure
 
-
+```text
 ai_resume_analyzer/
 │
 ├── app.py
@@ -44,13 +44,13 @@ ai_resume_analyzer/
 └── ...
 
 ⚙️ How to Run Locally
-1. Clone the repository
+1.Clone the repository
 
-   git clone https://github.com/NancySihag/ai_resume_analyzer.git
+    git clone https://github.com/NancySihag/ai_resume_analyzer.git
 
-   cd ai_resume_analyzer
+    cd ai_resume_analyzer
 
-2. Create a virtual environment
+2.Create a virtual environment
 
     python -m venv venv
 
@@ -64,14 +64,14 @@ ai_resume_analyzer/
  
     venv\Scripts\activate
 
-4. Install dependencies
+4.Install dependencies
 
     pip install -r requirements.txt
  
 
-5. Run the application
+5.Run the application
 
-   streamlit run app.py
+    streamlit run app.py
 
 The application will open in your browser.
 
