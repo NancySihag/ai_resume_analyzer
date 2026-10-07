@@ -73,13 +73,14 @@ ai_resume_analyzer/
 
     streamlit run app.py
 
-The application will open in your browser.
+The application will open in your browser.'''
 
-**🔐 Privacy**
+
+🔐 Privacy
 Resume files may contain sensitive personal information.
 For safety, avoid uploading resumes containing unnecessary private information when testing the application.
 
-**🚀 Future Improvements**
+🚀 Future Improvements
 - Support more job roles
 - Add ATS-style scoring
 - Improve skill extraction
@@ -87,7 +88,7 @@ For safety, avoid uploading resumes containing unnecessary private information w
 - Add downloadable analysis reports
 - Improve resume-job matching
 
-**👩‍💻 Author**
+👩‍💻 Author
 Nancy Sihag
 Python Developer | AI & Automation | Web Development
 - GitHub: https://github.com/NancySihag
