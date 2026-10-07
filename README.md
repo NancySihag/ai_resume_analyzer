@@ -1,151 +1,80 @@
 # 🤖 AI Resume Analyzer
 
-🚀 **[Live Demo](https://nancy-ai-resume-analyzer.streamlit.app)**
+An AI-powered resume analysis dashboard that helps users evaluate their resumes against different job roles and identify areas for improvement.
 
-A Streamlit-based resume analysis application that processes resumes and provides role-specific feedback for different internship positions.
+## 🌐 Live Demo
 
----
-
-## 🎯 What Problem Does It Solve?
-
-Many resumes contain good experience but do not clearly match the requirements of a particular job.
-
-This project helps users:
-
-- Analyze their resume
-- Compare their resume with a job description
-- Identify relevant keywords
-- Find missing keywords
-- Calculate a resume match score
-- Get suggestions for improvement
-
----
+https://nancy-ai-resume-analyzer.streamlit.app
 
 ## ✨ Features
 
-- 📄 Resume text extraction from PDF files
-- 🎯 Job description matching
-- 🔎 Keyword analysis
-- 📊 Resume match score
-- 💡 Resume improvement suggestions
-- 🖥️ Simple and interactive web interface
-- ⚡ Fast analysis using Python
+- 📄 Upload a PDF resume
+- 🤖 Analyze resume content with AI
+- 🎯 Compare resume with different job roles
+- 📊 Identify relevant skills and keywords
+- 💡 Generate actionable resume improvement suggestions
+- 🔍 Analyze resume-job alignment
+- 🖥️ Simple Streamlit dashboard
 
----
+## 🎯 Supported Job Roles
 
-## 🔄 How It Works
+The application currently includes templates for:
 
-1. Upload your resume in PDF format.
-2. The application extracts the resume text.
-3. Enter the target job description.
-4. The application analyzes the resume and job description.
-5. Resume content is compared with the job requirements.
-6. A match score is calculated.
-7. Relevant and missing keywords are identified.
-8. Suggestions are displayed to help improve the resume.
-
----
+- Data Analyst Intern
+- Frontend Developer Intern
+- Cloud / DevOps Intern
 
 ## 🛠️ Tech Stack
 
-- **Python**
-- **Streamlit**
-- **PyPDF2**
-- **Scikit-learn**
+- Python
+- Streamlit
+- PyPDF2
+- AI / LLM integration
+- Git & GitHub
 
----
+## 📂 Project Structure
 
-## 📸 Screenshots
+text
+ai_resume_analyzer/
+│
+├── app.py
+├── ResumeAnalyzer.py
+├── requirements.txt
+├── README.md
+└── ...
 
-### Dashboard
+⚙️ How to Run Locally
+1. Clone the repository
+   git clone https://github.com/NancySihag/ai_resume_analyzer.git
+   cd ai_resume_analyzer
+2. Create a virtual environment
+   python -m venv venv
+3. Activate the environment
+   macOS / Linux:
+   source venv/bin/activate
+   Windows:
+   venv\Scripts\activate
+4. Install dependencies
+   pip install -r requirements.txt
+ 
+5. Run the application
+   streamlit run app.py
+The application will open in your browser.
 
-![Dashboard](dashboard.png)
+**🔐 Privacy**
+Resume files may contain sensitive personal information.
+For safety, avoid uploading resumes containing unnecessary private information when testing the application.
 
-### Analysis Results
+**🚀 Future Improvements**
+- Support more job roles
+- Add ATS-style scoring
+- Improve skill extraction
+- Add detailed keyword analysis
+- Add downloadable analysis reports
+- Improve resume-job matching
 
-![Analysis Results](analysis-results.png)
-
----
-
-## 🚀 Installation
-
-### 1. Clone the Repository
-git clone https://github.com/NancySihag/ai_resume_analyzer.git
-
-2. Navigate to the Project
-cd ai_resume_analyzer
-
-3. Create a Virtual Environment
-macOS / Linux
-python3 -m venv .venv
-source .venv/bin/activate
-
-Windows
-python -m venv .venv
-.venv\Scripts\activate
-
-4. Install Dependencies
-pip install -r requirements.txt
-
-▶️ Run the Application
-streamlit run app.py
-
-Open the local URL shown in your terminal.
-Usually:
-http://localhost:8501
-
-💻 Usage
-1. Open the application.
-2. Upload your resume as a PDF.
-3. Enter or paste a target job description.
-4. Start the analysis.
-5. Review the resume match score.
-6. Check relevant and missing keywords.
-7. Use the suggestions to improve your resume.
-
-🎓 Example Use Cases
-This project can be useful for:
-- BCA and college students applying for internships
-- Students preparing resumes for specific job roles
-- Entry-level job seekers
-- Comparing resumes with job descriptions
-- Identifying missing job-related keywords
-- Improving resume relevance before applying
-
-🧠 What I Learned
-Building this project helped me gain practical experience with:
-- Python application development
-- Streamlit web applications
-- PDF text extraction
-- Natural language and keyword analysis
-- Resume and job-description comparison
-- Scikit-learn
-- Building and deploying a real-world application
-
-🔮 Future Improvements
-Possible future improvements include:
-- 🤖 More advanced AI-powered resume feedback
-- 📋 Support for additional job roles
-- 📄 Downloadable analysis reports
-- 📈 More detailed resume scoring
-- 🔍 Improved keyword and skill matching
-- 🎯 ATS-focused resume analysis
-- 📊 Enhanced analytics and visualizations
-
-🌐 Live Demo
-Try the application:
-🚀 AI Resume Analyzer
-
-👩‍💻 Author
+**👩‍💻 Author**
 Nancy Sihag
-BCA Student | Python Developer | AI & Automation | Web Development
+Python Developer | AI & Automation | Web Development
 - GitHub: https://github.com/NancySihag
-- LinkedIn: https://www.linkedin.com/in/nancy-sihag/
-
-📌 Project Status
-🟢 Active Project
-Built as a portfolio project to demonstrate Python, Streamlit, document processing, and AI/automation development skills.
-
-📄 License
-This project is intended for educational and portfolio purposes.
-
+- LinkedIn: https://www.linkedin.com/in/nancy-sihag
